@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyRepublic - Berlangganan WiFi</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #6200ea;
+            color: white;
+        }
+        header img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        header h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+        main {
+            padding: 20px;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .card-container .card:nth-child(5) {
+            grid-column: span 2;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .card-content {
+            padding: 10px 15px;
+        }
+        .card-content h3 {
+            margin: 5px 0;
+            color: #6200ea;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .card-content p {
+            margin: 2px 0;
+            font-size: 14px;
+        }
+        .card-content .price {
+            font-size: 24px;
+            color: #333;
+            font-weight: 700;
+            margin: 5px 0;
+        }
+        .card-content .price span {
+            font-size: 12px;
+            color: #888;
+            font-weight: 400;
+        }
+        .card-content .discount {
+            font-size: 14px;
+            color: #e53935;
+            font-weight: 500;
+            text-decoration: line-through;
+        }
+        .card-content .save {
+            font-size: 12px;
+            color: #1b5e20;
+            font-weight: 500;
+            margin: 5px auto;
+            display: inline-block;
+            background-color: #e0f2f1;
+            padding: 3px 8px;
+            border-radius: 5px;
+        }
+        .card-content .save strong {
+            font-weight: bold;
+        }
+        .card-content .note {
+            font-size: 12px;
+            color: #888;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .cta button {
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        .cta button:hover {
+            background-color: #5300c4;
+        }
+        .cta .whatsapp-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #25d366;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .cta .whatsapp-btn img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo-myrepublic.png" alt="MyRepublic Logo">
+    </header>
+    <main>
+        <h2 style="text-align:center; color:#333; font-size: 28px; font-weight: 700; margin-bottom: 20px;">Pilih Paket WiFi Anda</h2>
+
+        <div class="card-container">
+            <div class="card">
+                <img src="value30.webp" alt="Value 30 Package">
+                <div class="card-content">
+                    <h3>Value 30</h3>
+                    <p class="price">Rp 235.000 <span>/ bulan</span></p>
+                    <p class="discount">Rp 309.009</p>
+                    <p class="save">Hemat <strong>Rp 74.009</strong> (-24%)</p>
+                    <p class="note">Harga belum termasuk PPN 11%</p>
+                    <p><strong>Kecepatan:</strong> 30 Mbps</p>
+                    <div class="cta">
+                        <a href="https://wa.me/6285755771622?text=Halo%20sales%20My%20Republic%2C%20info%20lebih%20lanjut%20tentang%20paket%20Value%2030" class="whatsapp-btn">
+                            <img src="whatsapp-icon.png" alt="WhatsApp"> Tanya Sales
+                        </a>
+                        <button>Langganan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="fast50.webp" alt="Fast 50 Package">
+                <div class="card-content">
+                    <h3>Fast 50</h3>
+                    <p class="price">Rp 250.000 <span>/ bulan</span></p>
+                    <p class="discount">Rp 409.009</p>
+                    <p class="save">Hemat <strong>Rp 159.009</strong> (-39%)</p>
+                    <p class="note">Harga belum termasuk PPN 11%</p>
+                    <p><strong>Kecepatan:</strong> 50 Mbps</p>
+                    <div class="cta">
+                        <a href="https://wa.me/6285755771622?text=Halo%20sales%20My%20Republic%2C%20info%20lebih%20lanjut%20tentang%20paket%20Fast%2050" class="whatsapp-btn">
+                            <img src="whatsapp-icon.png" alt="WhatsApp"> Tanya Sales
+                        </a>
+                        <button>Langganan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="fast100.webp" alt="Fast 100 Package">
+                <div class="card-content">
+                    <h3>Fast 100</h3>
+                    <p class="price">Rp 350.000 <span>/ bulan</span></p>
+                    <p class="discount">Rp 509.009</p>
+                    <p class="save">Hemat <strong>Rp 159.009</strong> (-31%)</p>
+                    <p class="note">Harga belum termasuk PPN 11%</p>
+                    <p><strong>Kecepatan:</strong> 100 Mbps</p>
+                    <div class="cta">
+                        <a href="https://wa.me/6285755771622?text=Halo%20sales%20My%20Republic%2C%20info%20lebih%20lanjut%20tentang%20paket%20Fast%20100" class="whatsapp-btn">
+                            <img src="whatsapp-icon.png" alt="WhatsApp"> Tanya Sales
+                        </a>
+                        <button>Langganan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="fast250.webp" alt="Fast 250 Package">
+                <div class="card-content">
+                    <h3>Fast 250</h3>
+                    <p class="price">Rp 500.000 <span>/ bulan</span></p>
+                    <p class="discount">Rp 709.009</p>
+                    <p class="save">Hemat <strong>Rp 209.009</strong> (-29%)</p>
+                    <p class="note">Harga belum termasuk PPN 11%</p>
+                    <p><strong>Kecepatan:</strong> 250 Mbps</p>
+                    <div class="cta">
+                        <a href="https://wa.me/6285755771622?text=Halo%20sales%20My%20Republic%2C%20info%20lebih%20lanjut%20tentang%20paket%20Fast%20250" class="whatsapp-btn">
+                            <img src="whatsapp-icon.png" alt="WhatsApp"> Tanya Sales
+                        </a>
+                        <button>Langganan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="fast500.webp" alt="Fast 500 Package">
+                <div class="card-content">
+                    <h3>Fast 500</h3>
+                    <p class="price">Rp 750.000 <span>/ bulan</span></p>
+                    <p class="discount">Rp 1.009.009</p>
+                    <p class="save">Hemat <strong>Rp 259.009</strong> (-26%)</p>
+                    <p class="note">Harga belum termasuk PPN 11%</p>
+                    <p><strong>Kecepatan:</strong> 500 Mbps</p>
+                    <div class="cta">
+                        <a href="https://wa.me/6285755771622?text=Halo%20sales%20My%20Republic%2C%20info%20lebih%20lanjut%20tentang%20paket%20Fast%20500" class="whatsapp-btn">
+                            <img src="whatsapp-icon.png" alt="WhatsApp"> Tanya Sales
+                        </a>
+                        <button>Langganan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
